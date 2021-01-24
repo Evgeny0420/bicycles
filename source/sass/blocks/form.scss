@@ -1,0 +1,27 @@
+.form h2 {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 165%;
+  text-align: center;
+  color: $basic-color;
+  letter-spacing: -0.005em;
+}
+
+.form__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__item {
+  list-style-type: none;
+}
+
+@media ($tablet-widths) {
+  .form {
+    background-color: $basic-color;
+  }
+}

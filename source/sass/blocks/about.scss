@@ -1,0 +1,15 @@
+.about h2 {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 139%;
+  color: $basic-color;
+  letter-spacing: -0.005em;
+}
+
+.about p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 160%;
+  color: rgba($basic-color, 0.8);
+  letter-spacing: -0.005em;
+}

@@ -1,5 +1,12 @@
 @import "normalize.scss";
 @import "fonts.scss";
 @import "visually-hidden.scss";
+@import "variables.scss";
 @import "global.scss";
-
+@import "blocks/page-header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/about.scss";
+@import "blocks/form.scss";
+//крайний
+@import "blocks/map.scss";
+@import "blocks/contacts.scss";
