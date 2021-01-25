@@ -1,6 +1,6 @@
 .navigation {
   display: grid;
-  margin: 0 auto -51px;
+  margin: 10px auto -61px;
   max-width: 874px;
 }
 
@@ -34,7 +34,7 @@
 
 @media ($tablet-widths-max) {
   .navigation {
-    margin: 0;
+    margin: 0 auto -50px;
     display: grid;
     max-width: 100%;
   }
@@ -85,8 +85,8 @@
       }
     }
 
-    //&--close {
-    //  display: none;
-    //}
+    &--close {
+      display: none;
+    }
   }
 }

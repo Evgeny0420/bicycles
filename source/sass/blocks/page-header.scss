@@ -12,9 +12,10 @@
   max-width: 874px;
   margin: -51px auto 0;
   display: grid;
-  grid-template-columns: auto auto;
-  padding-top: 276px;
-  padding-bottom: 240px;
+  grid-template-columns: min-content min-content;
+  justify-content: space-between;
+  padding-top: 317px;
+  padding-bottom: 218px;
 }
 
 @media ($tablet-widths-max) {
@@ -27,6 +28,7 @@
     max-width: 100%;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+    justify-content: stretch;
     padding: 0;
     margin: 0;
   }
@@ -35,5 +37,15 @@
 @media ($mobile-widths-only) {
   .page-header__about-form-wrapper {
     background-image: url("../img/background-mobile-1x.jpg");
+  }
+
+  .page-header__container {
+    max-width: 767px;
+    min-width: 320px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: stretch;
+    padding: 0;
+    margin: 0;
   }
 }
