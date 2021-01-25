@@ -1,15 +1,29 @@
-.about h2 {
-  font-weight: bold;
-  font-size: 46px;
-  line-height: 139%;
-  color: $basic-color;
-  letter-spacing: -0.005em;
+.about {
+  h2 {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 139%;
+    color: $basic-color;
+    letter-spacing: -0.005em;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    color: rgba($basic-color, 0.8);
+    letter-spacing: -0.005em;
+  }
 }
 
-.about p {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 160%;
-  color: rgba($basic-color, 0.8);
-  letter-spacing: -0.005em;
+@media ($tablet-widths-max) {
+  .about {
+    margin: 20px 10px 130px;
+
+    svg {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
 }
