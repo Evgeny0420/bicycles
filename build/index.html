@@ -10,20 +10,20 @@
   <body class="page-body">
     <h1 class="visually-hidden">Велосипеды</h1>
     <header class="page-header">
-      <nav class="page-header__navigation navigation">
+      <nav class="page-header__navigation navigation navigation--nojs navigation--close">
         <button class="navigation__button-menu"></button>
-        <ul class="navigation__list navigation__list--close">
+        <ul class="navigation__list navigation__list--nojs navigation__list--close">
           <li class="navigation__item">
-            <a href="">О нас</a>
+            <a href="#about-us">О нас</a>
           </li>
           <li class="navigation__item">
-            <a href="">Виды велосипедов</a>
+            <a href="#bicycles">Виды велосипедов</a>
           </li>
           <li class="navigation__item">
-            <a href="">Видео про велосипеды</a>
+            <a href="#about-video">Видео про велосипеды</a>
           </li>
           <li class="navigation__item">
-            <a href="">Контакты</a>
+            <a href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -59,7 +59,7 @@
       </section>
     </header>
     <main class="page-main">
-      <section class="page-main__about-us about-us">
+      <section id="about-us" class="page-main__about-us about-us">
         <h2>Несколько фактов о нас</h2>
         <ul class="about-us__list">
           <li class="about-us__item">
@@ -80,7 +80,7 @@
           </li>
         </ul>
       </section>
-      <section class="page-main__bicycles bicycles">
+      <section id="bicycles" class="page-main__bicycles bicycles">
         <div class="bicycles__wrapper">
           <h2>Виды велосипедов</h2>
           <ul class="bicycles__list">
@@ -111,7 +111,7 @@
           </ul>
         </div>
       </section>
-      <section class="page-main__about-video about-video">
+      <section id="about-video" class="page-main__about-video about-video">
         <h2>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="about-video__video-wrapper">
@@ -126,7 +126,7 @@
         <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1611064235629!5m2!1sru!2sru" width="957" height="530" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
-      <section class="page-footer__contacts contacts">
+      <section id="contacts" class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -136,7 +136,7 @@
             <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
           </li>
           <li class="contacts__item">
-            <svg width="21px" height="23px">
+            <svg width="21px" height="23px" fill="none">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>
             <a href="tel:+749978468446">+7(499)-784-684-46</a>
@@ -144,5 +144,6 @@
         </ul>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
