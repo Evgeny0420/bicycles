@@ -72,7 +72,9 @@
       margin: 70px 0 30px;
     }
 
-    h2, input, button {
+    h2,
+    input,
+    button {
       width: 321px;
     }
   }
@@ -80,7 +82,9 @@
 
 @media ($mobile-widths-only) {
   .form {
-    h2, input, button {
+    h2,
+    input,
+    button {
       width: 288px;
     }
 

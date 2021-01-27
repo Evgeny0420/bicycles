@@ -1,7 +1,10 @@
 .navigation {
   display: grid;
+  width: 874px;
+  position: absolute;
   margin: 0 auto;
-  max-width: 874px;
+  left: 0;
+  right: 0;
 }
 
 .navigation__button-menu {
@@ -10,7 +13,7 @@
 
 .navigation__list {
   margin: 0;
-  padding: 9px 19px;
+  padding: 20px 19px 9px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba($basic-color, 0.2);
@@ -39,9 +42,8 @@
 
 @media ($tablet-widths-max) {
   .navigation {
-    margin: 0 auto -50px;
     display: grid;
-    max-width: 100%;
+    width: 100%;
 
     &--close .navigation__button-menu {
       display: block;
@@ -69,6 +71,12 @@
         background-color: $basic-other-color;
         box-shadow: 0 5.5px 0 0 $basic-other-color, 0 11.5px 0 0 $basic-other-color;
       }
+    }
+
+    &--opened {
+      position: fixed;
+      z-index: 100;
+      background-color: $basic-color;
     }
 
     &--opened .navigation__button-menu {
@@ -105,6 +113,10 @@
       display: none;
     }
 
+    &--nojs {
+      position: relative;
+    }
+
     &--nojs .navigation__list {
       margin-top: 50px;
     }
@@ -135,6 +147,17 @@
     padding: 16px;
     background-color: $link-background-color;
     margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      background-image: url("../img/shape.svg");
+      width: 8px;
+      height: 12px;
+    }
 
     a {
       font-size: 20px;

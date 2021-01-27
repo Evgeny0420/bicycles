@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Велосипеды</title>
+    <link rel="preload" href="/fonts/*.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <h1 class="visually-hidden">Велосипеды</h1>
     <header class="page-header">
       <nav class="page-header__navigation navigation navigation--nojs navigation--close">
-        <button class="navigation__button-menu"></button>
+        <button class="navigation__button-menu" type="button"></button>
         <ul class="navigation__list navigation__list--nojs navigation__list--close">
           <li class="navigation__item">
             <a href="#about-us">О нас</a>
@@ -49,7 +50,7 @@
                 <label for="name"></label>
               </li>
               <li class="form__item">
-                <input type="tel" id="tel" placeholder="Введите Ваш номер телефона" required="">
+                <input type="tel" id="tel" placeholder="Введите Ваш номер телефона" required="" minlength="12" maxlength="18">
                 <label for="tel"></label>
               </li>
             </ul>

@@ -74,7 +74,8 @@
   }
 
   &:nth-child(2n) {
-    &::before, &::after {
+    &::before,
+    &::after {
       content: "";
       position: absolute;
       z-index: 1;
@@ -132,7 +133,9 @@
   }
 
   .bicycles__item {
-    &:first-child, &:last-child, &:nth-child(2n) {
+    &:first-child,
+    &:last-child,
+    &:nth-child(2n) {
       margin-top: 10px;
     }
 
@@ -157,7 +160,8 @@
     }
 
     &:nth-child(2n) {
-      &::before, &::after {
+      &::before,
+      &::after {
         display: none;
       }
     }
@@ -199,4 +203,3 @@
     }
   }
 }
-
