@@ -19,6 +19,12 @@
     display: flex;
     justify-content: start;
   }
+
+  a {
+    &:hover {
+      box-shadow: 0 13px 11px rgba($link-menu-color, 0.4);
+    }
+  }
 }
 
 @media ($tablet-widths-max) {
@@ -42,7 +48,7 @@
       justify-content: center;
     }
 
-    svg {
+    a {
       position: absolute;
       top: 25px;
       left: 22px;
@@ -58,7 +64,7 @@
       width: 288px;
     }
 
-    svg {
+    a {
       left: 17px;
     }
   }

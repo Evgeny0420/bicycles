@@ -1,6 +1,6 @@
 .navigation {
   display: grid;
-  margin: 10px auto -61px;
+  margin: 0 auto;
   max-width: 874px;
 }
 
@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba($basic-color, 0.2);
+  flex-wrap: wrap;
   box-sizing: border-box;
 }
 
@@ -28,6 +29,11 @@
     line-height: 200%;
     letter-spacing: -0.005em;
     color: rgba($basic-color, 0.7);
+    background-color: transparent;
+
+    &:hover {
+      box-shadow: 0 13px 11px rgba($link-menu-color, 0.4);
+    }
   }
 }
 
@@ -47,6 +53,10 @@
       border: none;
       cursor: pointer;
       border-radius: 0;
+
+      &:hover {
+        box-shadow: 0 13px 11px rgba($link-menu-color, 0.4);
+      }
 
       &::before {
         content: "";
@@ -102,10 +112,12 @@
 
   .navigation__list {
     margin: 0;
-    padding: 0;
+    padding: 100px 0 138px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     border-bottom: none;
+    height: 100vh;
 
     &--close {
       display: none;

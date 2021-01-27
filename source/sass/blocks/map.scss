@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 35px;
+  padding: 127px 35px 39px;
   box-sizing: border-box;
 
   h2 {
@@ -12,6 +12,7 @@
     color: $text-other-color;
     letter-spacing: -0.005em;
     text-align: center;
+    margin-bottom: 31px;
   }
 
   p {
@@ -20,18 +21,34 @@
     line-height: 182%;
     text-align: center;
     color: rgba($basic-other-color, 0.7);
-    width: 55%;
+    max-width: 555px;
+    margin-top: 0;
+    margin-bottom: 40px;
   }
 
   iframe {
     border: none;
     width: 100%;
+    max-width: 957px;
     height: 530px;
   }
 }
 
 @media ($tablet-widths-max) {
   .map {
+    padding: 37px 35px 22px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 125%;
+      margin-bottom: 21px;
+    }
+
+    p {
+      max-width: 629px;
+      margin-bottom: 20px;
+    }
+
     iframe {
       height: 545px;
     }
@@ -40,7 +57,19 @@
 
 @media ($mobile-widths-only) {
   .map {
-    padding: 0;
+    padding: 5px 0 32px;
+
+    h2 {
+      font-size: 18px;
+      line-height: 167%;
+      margin-bottom: 21px;
+    }
+
+    p {
+      max-width: 629px;
+      min-width: 270px;
+      margin: 0 35px 20px;
+    }
 
     iframe {
       height: 250px;

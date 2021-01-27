@@ -1,7 +1,8 @@
 .bicycles {
   background-color: $body-other-color;
-  z-index: -3;
-  padding-bottom: 123px;
+  z-index: -1;
+  padding-bottom: 110px;
+  overflow-x: hidden;
 
   h2 {
     font-weight: 600;
@@ -37,7 +38,7 @@
   z-index: 1;
 
   &:first-child {
-    margin-top: 21px;
+    margin-top: 35px;
 
     &::before {
       content: "";
@@ -90,7 +91,7 @@
     }
 
     &::after {
-      bottom: 58px;
+      bottom: 71px;
       right: -23px;
     }
   }
@@ -106,6 +107,7 @@
     text-align: center;
     letter-spacing: -0.5px;
     color: $basic-other-color;
+    margin: 17px 0 40px;
   }
 }
 

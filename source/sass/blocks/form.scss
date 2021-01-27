@@ -18,12 +18,17 @@
     border: none;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 11px 30px;
+    padding: 11px 20px;
     width: 327px;
     height: 51px;
     font-weight: 600;
     font-size: 15px;
     line-height: 21px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 13px 11px rgba($link-menu-color, 0.4);
+    }
   }
 }
 
@@ -45,9 +50,13 @@
     border: 1px solid $border-form-color;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 11px 30px;
+    padding: 11px 20px;
     width: 327px;
     height: 48px;
+
+    &:required:valid {
+      border-color: green;
+    }
   }
 }
 
