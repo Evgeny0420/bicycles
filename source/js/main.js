@@ -1,6 +1,10 @@
 'use strict';
 
 (function () {
+  document.getElementsByClassName('.navigation');
+  document.getElementsByClassName('.navigation__button-menu');
+  document.getElementsByClassName('.navigation__list');
+  document.getElementsByClassName('.navigation__item');
   const header = document.querySelector(`.navigation`);
   const navButton = document.querySelector(`.navigation__button-menu`);
   const menu = document.querySelector(`.navigation__list`);
