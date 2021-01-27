@@ -6,6 +6,10 @@
   background: $text-other-color url("../img/background-desktop-1x.jpg") no-repeat;
   background-position: 50% 0;
   background-size: cover;
+
+  @media ($retina) {
+    background-image: url("../img/background-desktop-2x.jpg");
+  }
 }
 
 .page-header__container {
@@ -22,6 +26,10 @@
   .page-header__about-form-wrapper {
     background-image: url("../img/background-tablet-1x.jpg");
     background-size: contain;
+
+    @media ($retina) {
+      background-image: url("../img/background-tablet-2x.jpg");
+    }
   }
 
   .page-header__container {
@@ -37,6 +45,10 @@
 @media ($mobile-widths-only) {
   .page-header__about-form-wrapper {
     background-image: url("../img/background-mobile-1x.jpg");
+
+    @media ($retina) {
+      background-image: url("../img/background-mobile-2x.jpg");
+    }
   }
 
   .page-header__container {

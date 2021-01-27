@@ -55,7 +55,7 @@
     height: 48px;
 
     &:required:valid {
-      border-color: green;
+      border-color: $valid-form-color;
     }
   }
 }
