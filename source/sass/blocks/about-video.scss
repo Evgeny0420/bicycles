@@ -4,12 +4,8 @@
   margin-bottom: 98px;
 
   h2 {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: -0.005em;
+    @include title-style;
     color: $basic-color;
-    text-align: center;
     margin: 71px auto 20px;
   }
 

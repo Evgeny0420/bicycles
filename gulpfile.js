@@ -51,7 +51,7 @@ gulp.task('refresh', function (done) {
 gulp.task('images', function () {
   return gulp.src('source/img/**/*.{png,jpg,svg}')
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.optipng({optimizationLevel: 4}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
@@ -61,7 +61,7 @@ gulp.task('images', function () {
 
 gulp.task('webp', function () {
   return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(webp({quality: 90}))
+    .pipe(webp({quality: 80}))
     .pipe(gulp.dest('build/img'));
 });
 

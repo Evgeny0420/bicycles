@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Работа акселератор Евгения Карпова">
     <title>Велосипеды</title>
-    <link rel="preload" href="/fonts/*.woff2" as="font">
+    <link href="fonts/opensans-bold.woff" rel="preload" as="font" crossorigin="anonymous">
+    <link href="fonts/opensans-bold.woff2" rel="preload" as="font" crossorigin="anonymous">
+    <link href="fonts/opensans-light.woff" rel="preload" as="font" crossorigin="anonymous">
+    <link href="fonts/opensans-light.woff2" rel="preload" as="font" crossorigin="anonymous">
+    <link href="fonts/opensans-regular.woff" rel="preload" as="font" crossorigin="anonymous">
+    <link href="fonts/opensans-regular.woff2" rel="preload" as="font" crossorigin="anonymous">
+    <link href="fonts/opensans-semibold.woff" rel="preload" as="font" crossorigin="anonymous">
+    <link href="fonts/opensans-semibold.woff2" rel="preload" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <h1 class="visually-hidden">Велосипеды</h1>
     <header class="page-header">
       <nav class="page-header__navigation navigation navigation--nojs navigation--close">
-        <button class="navigation__button-menu" type="button"></button>
+        <button class="navigation__button-menu" type="button" aria-label="open-close-menu"></button>
         <ul class="navigation__list navigation__list--nojs navigation__list--close">
           <li class="navigation__item">
             <a href="#about-us">О нас</a>
@@ -31,7 +39,7 @@
       <section class="page-header__about-form-wrapper">
         <div class="page-header__container">
           <div class="page-header__about about">
-            <a class="about__logo">
+            <a class="about__logo" aria-label="Велосипеды">
               <svg width="68" height="21" fill="none">
                 <path d="M13.364 0v20.046H10.07V5.822L8.973 7.207 6.825 9.975l-.095.095-.144-.095L4.44 7.207l-1.1-1.432v14.27H0V0h3.34l3.39 4.295L10.07 0h3.294zm-5.06 10.07l-.095-.095.095.095z" fill="#0AD9C6"></path>
                 <path d="M8.448 9.975l-.096.095h-.047l.143-.095zm29.762-4.36l-9.128 6.701 2.113 2.878 9.127-6.701-2.113-2.878z" fill="#0AD9C6"></path>
@@ -47,14 +55,14 @@
             <ul class="form__list">
               <li class="form__item">
                 <input type="text" id="name" placeholder="Введите ваше имя" required="">
-                <label for="name"></label>
+                <label class="visually-hidden" for="name">Имя</label>
               </li>
               <li class="form__item">
                 <input type="tel" id="tel" placeholder="Введите Ваш номер телефона" required="" pattern="[\+]\d{11}" minlength="12" maxlength="12">
-                <label for="tel"></label>
+                <label class="visually-hidden" for="tel">Телефон</label>
               </li>
             </ul>
-            <button type="submit">Подобрать велосипед мечты</button>
+            <button type="submit" aria-label="submit">Подобрать велосипед мечты</button>
           </form>
         </div>
       </section>
@@ -119,9 +127,14 @@
         <h2>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="about-video__video-wrapper">
-          <!-- 1х: 929px; 2x: 1858px -->
-          <img src="img/video.jpg" width="929" height="522" alt="Видео">
-          <a href="#"></a>
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/video-mob.webp 1x, img/video-mob-2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-tab.webp 1x, img/video-tab-2x.webp 2x">
+            <source type="image/webp" srcset="img/video.webp 1x, img/video-2x.webp 2x">
+            <!-- 1х: 929px; 2x: 1858px -->
+            <img src="img/video.jpg" srcset="img/video-2x.jpg 2x" width="929" height="522" alt="Видео">
+          </picture>
+          <a href="#" aria-label="видео"></a>
         </div>
       </section>
     </main>
@@ -129,7 +142,7 @@
       <section class="page-footer__map map">
         <h2>Как нас найти?</h2>
         <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1611064235629!5m2!1sru!2sru" width="957" height="530" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1611064235629!5m2!1sru!2sru" width="957" height="530" allowfullscreen="" aria-hidden="false" tabindex="0" title="map"></iframe>
       </section>
       <section id="contacts" class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>

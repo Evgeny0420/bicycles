@@ -5,12 +5,8 @@
   overflow-x: hidden;
 
   h2 {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: -0.005em;
+    @include title-style;
     color: $text-other-color;
-    text-align: center;
     margin-top: 150px;
   }
 }

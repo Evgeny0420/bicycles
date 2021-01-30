@@ -6,12 +6,8 @@
   box-sizing: border-box;
 
   h2 {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 100%;
+    @include title-style;
     color: $text-other-color;
-    letter-spacing: -0.005em;
-    text-align: center;
     margin-bottom: 31px;
   }
 
