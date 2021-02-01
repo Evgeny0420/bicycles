@@ -1,10 +1,6 @@
 'use strict';
 
 (function () {
-  document.getElementsByClassName('.navigation');
-  document.getElementsByClassName('.navigation__button-menu');
-  document.getElementsByClassName('.navigation__list');
-  document.getElementsByClassName('.navigation__item');
   var header = document.querySelector('.navigation');
   var navButton = document.querySelector('.navigation__button-menu');
   var menu = document.querySelector('.navigation__list');
@@ -25,17 +21,19 @@
     header.classList.add('navigation--opened');
   };
 
-  navButton.addEventListener('click', function () {
-    if (header.classList.contains('navigation--close')) {
-      openMenu();
-    } else {
-      closeMenu();
-    }
-  });
-
-  for (var i = 0; i < navLink.length; i++) {
-    navLink[i].addEventListener('click', function () {
-      closeMenu();
+  if (header) {
+    navButton.addEventListener('click', function () {
+      if (header.classList.contains('navigation--close')) {
+        openMenu();
+      } else {
+        closeMenu();
+      }
     });
+
+    for (var i = 0; i < navLink.length; i++) {
+      navLink[i].addEventListener('click', function () {
+        closeMenu();
+      });
+    }
   }
 })();
