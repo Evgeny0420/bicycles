@@ -12,7 +12,7 @@
 }
 
 .bicycles__wrapper {
-  max-width: 1126px;
+  max-width: 1146px;
   display: grid;
   justify-content: stretch;
   margin: 0 auto;
@@ -20,11 +20,12 @@
 
 .bicycles__list {
   margin: 0;
-  padding: 0;
+  padding: 0 10px 0;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1126px;
+  max-width: 1146px;
 }
 
 .bicycles__item {
@@ -94,7 +95,7 @@
   }
 
   img {
-    width: 341px;
+    height: auto;
   }
 
   p {
@@ -108,13 +109,11 @@
   }
 }
 
-@media ($desktop-big-widths) {
-  .bicycles__list {
-    padding: 0 0.4% 0;
-  }
-
+@media ($desktop-big-width) {
   .bicycles__item {
-    margin: 0 0.1% 0;
+    img {
+      width: calc(320px + (342 - 320) * ((100vw - 1024px) / (1146 - 1024)));
+    }
   }
 }
 
