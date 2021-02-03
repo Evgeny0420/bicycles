@@ -19,12 +19,6 @@
     display: flex;
     justify-content: start;
   }
-
-  a {
-    &:hover {
-      box-shadow: 0 13px 11px rgba($link-menu-color, 0.4);
-    }
-  }
 }
 
 @media ($tablet-widths-max) {

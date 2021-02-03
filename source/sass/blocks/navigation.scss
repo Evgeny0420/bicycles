@@ -13,7 +13,7 @@
 
 .navigation__list {
   margin: 0;
-  padding: 20px 19px 9px;
+  padding: 20px 0 9px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba($basic-color, 0.2);
@@ -24,6 +24,7 @@
 .navigation__item {
   list-style-type: none;
   display: flex;
+  margin: 0 19px 0;
 
   a {
     text-decoration: none;
@@ -44,6 +45,7 @@
   .navigation {
     display: grid;
     width: 100%;
+    grid-template-rows: max-content;
 
     &--close .navigation__button-menu {
       display: block;
@@ -77,6 +79,8 @@
       position: fixed;
       z-index: 100;
       background-color: $basic-color;
+      height: 100vh;
+      overflow-y: auto;
     }
 
     &--opened .navigation__button-menu {
@@ -124,12 +128,13 @@
 
   .navigation__list {
     margin: 0;
-    padding: 100px 0 138px;
+    padding: 50px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     border-bottom: none;
-    height: 100vh;
+    height: 100%;
 
     &--close {
       display: none;
@@ -146,7 +151,7 @@
     box-sizing: border-box;
     padding: 16px;
     background-color: $link-background-color;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
     position: relative;
 
     &::after {

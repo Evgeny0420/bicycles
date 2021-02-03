@@ -3,4 +3,8 @@
   min-width: 320px;
   background-color: $basic-color;
   font-family: $font;
+
+  &--open-menu {
+    overflow-y: hidden;
+  }
 }
